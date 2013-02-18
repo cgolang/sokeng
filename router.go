@@ -1,4 +1,4 @@
-package router
+package sokeng
 
 import (
     "fmt"
@@ -15,19 +15,19 @@ func (p *SoKengMux) ServeHTTP(w http.ResponseWriter, r *http.Request) Handle{
 	}
 
 	if r.URL.Path =="/add/" { //当用户提交新坑
-		add(w, r)
+		Add(w, r)
 	}
 
 	if r.URL.Path == "/ticket/" { //当用户审核随机坑
-                ticket(w, r)
+                Ticket(w, r)
         } 
 
 	if r.URL.Path == "/admin/" { //当用户是管理组
-                admin(w, r)
+                Admin(w, r)
         }
 
 	if r.URL.Path == "/e/" { //当用户是企业用户
-                e8(w, r)
+                E8(w, r)
         } 
 
 
