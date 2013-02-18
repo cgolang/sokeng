@@ -1,0 +1,36 @@
+package SoKeng
+
+type SoKengModel struct {
+  driver string
+}
+
+func (this *SoKengModel) Insert() {
+
+}
+
+func (this *SoKengModel) MultipleInsert() {
+
+}
+
+func (this *SoKengModel) Update() {
+
+}
+
+func (this *SoKengModel) Query() {
+
+}
+
+//Deletes from table with clauses where and using.
+func (this *SoKengModel) Delete() {
+
+}
+
+//Start a transaction
+func (this *SoKengModel) Transaction() {
+
+}
+
+//commit transaction
+func (this *SoKengModel) Commit() {
+
+}
